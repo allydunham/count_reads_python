@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "count_reads"
+version = "1.0.0"
+description = "Count structured sequence reads"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE", content-type = "text"}
+keywords = [
+  "bioinformatics", "sequencing" 
+]
+authors = [
+  { name = "Alistair Dunham", email = "ad44@sanger.ac.uk" }
+]
+maintainers = [
+  { name = "Alistair Dunham", email = "ad44@sanger.ac.uk" }
+]
+requires-python = ">=3"
+dependencies = [
+  "numpy",
+  "biopython",
+  "tqdm"
+]
+
+[project.urls]
+Repository = "https://gitlab.internal.sanger.ac.uk/ad44/count-reads-python"
+Documentation = "https://gitlab.internal.sanger.ac.uk/ad44/count-reads-python"
+Publication = "https://gitlab.internal.sanger.ac.uk/ad44/count-reads-python"
+
+[project.scripts]
+count_reads = "count_reads.scripts.count_reads:main"
+
+[tool.setuptools]
+include-package-data = false
+zip-safe = true
+
+[tool.setuptools.packages]
+find = {}
