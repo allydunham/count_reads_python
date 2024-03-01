@@ -1,6 +1,7 @@
 README.md
 pyproject.toml
 count_reads/__init__.py
+count_reads/lib.py
 count_reads.egg-info/PKG-INFO
 count_reads.egg-info/SOURCES.txt
 count_reads.egg-info/dependency_links.txt

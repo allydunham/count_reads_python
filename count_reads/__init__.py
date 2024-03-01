@@ -2,9 +2,11 @@
 A python CLI tool and library for counting and processing structured sequence reads
 """
 
-import logging
+# import logging
 
-from count_reads import lib
+from count_reads.lib import *
 
-__all__ = [i for j in (lib.__all__) for i in j]
+__all__ = ["ReadPair", "SequenceParser", "SequenceLibrary", "Region", "ObservedRegion",
+           "ObservedCombination", "FilterCount", "count_seqs", "compare_to_library",
+           "write_counts"]
 
