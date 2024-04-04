@@ -28,6 +28,7 @@ from itertools import islice
 
 from tqdm import tqdm
 from count_reads import *
+from count_reads import create_default_tqdm 
 
 def main():
     """

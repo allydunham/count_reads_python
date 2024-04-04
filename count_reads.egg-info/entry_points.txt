@@ -1,2 +1,0 @@
-[console_scripts]
-count_reads = count_reads.scripts.count_reads:main
